@@ -4,12 +4,13 @@
 	<title>Planet Generator</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="tags.js"></script>
 </head>
 <body>
 	<div class="SectorSidebar">
 		<div>
 
-			<button type="button" onclick=" techLevel(); planetName(); planetSize(); getRandomCharacteristic();" id="npcButton" onclick="">Generate</button>
+			<button type="button" onclick="planetTag(); techLevel(); planetName(); planetSize(); getRandomCharacteristic(); tagdescriptions();" id="npcButton" onclick="">Generate</button>
 			<div class="Sidebar-Header">
 				<h1 class="Header" id="planet"></h1>
 			</div>
@@ -17,15 +18,15 @@
 				<h3 class="SectionHeader">Attributes</h3>
 					<p class="PlanetInfo-Attr"><strong>Tech Level: </strong> <span id="techlevel"></span></p>
 					<p class="PlanetInfo-Attr"><strong>World Size: </strong><span id="planetsize"></span></p>
-					<p class="PlanetInfo-Attr"><strong>Characteristics: </strong><span id="characteristics"></span></p>
-					<p class="PlanetInfo-Attr"><strong>Atmosphere: </strong><span id="asteroids_A"></span></p>
-					<p class="PlanetInfo-Attr"><strong>Biosphere: </strong></p>
-					<p class="PlanetInfo-Attr"><strong>Population: </strong></p>
+					<p class="PlanetInfo-Attr"><strong>Characteristics: </strong><span id="characteristic"></span></p>
+					<p class="PlanetInfo-Attr"><strong>Atmosphere: </strong><span id="atmosphere"></span></p>
+					<p class="PlanetInfo-Attr"><strong>Biosphere: </strong><span id="biosphere"></span></p>
+					<p class="PlanetInfo-Attr"><strong>Population: </strong><span id="population"></span></p>
 				<h3 class="SectionHeader">World Tags</h3>
 					<div class="PlanetInfo-Section">
 						<div class="PlanetInfo-Tag">
-							<h4 class="Header">Tag Here</h4>
-							<p class="PlanetInfo-Content">A bunch of random text here.</p>
+							<h2 class="Header"><span id="planettag"></span></h2>
+							<p class="PlanetInfo-Content"><span id="tagdescription"></span></p>
 							<p class="PlanetInfo-Content"><b>Enemies:</b></p>
 							<p class="PlanetInfo-Content"><b>Friends:</b></p>
 							<p class="PlanetInfo-Content"><b>Complications:</b></p>
