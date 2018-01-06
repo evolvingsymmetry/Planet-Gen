@@ -4,12 +4,12 @@
 	<title>Planet Generator</title>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
-	<script type="text/javascript" src="atmospheres.js"></script>
 </head>
 <body>
 	<div class="SectorSidebar">
 		<div>
-			<input type="button" id="btnSearch" value="Search" onclick="GetValue();" />
+
+			<button type="button" onclick=" techLevel(); planetName(); planetSize(); getRandomCharacteristic();" id="npcButton" onclick="">Generate</button>
 			<div class="Sidebar-Header">
 				<h1 class="Header" id="planet"></h1>
 			</div>
@@ -36,6 +36,6 @@
 			</div>
 		</div>
 	</div>
-	
+	<script type="text/javascript" src="atmospheres.js"></script>
 </body>
 </html>

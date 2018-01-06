@@ -1,3 +1,1 @@
-var asteroids_A = new Array(
-	"Testing",
-)
+var asteroids_A = new Array("Testing",);
